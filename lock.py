@@ -64,7 +64,7 @@ def encode_rot13(string_to_encode):
 #rot13 cipher decode
 def decode_rot13():
     print("Here is your decoded string:\n ")
-    print()
+    print() 
 
 def main():
     string_to_encode = input("Please enter the string you wish to encode:\n")

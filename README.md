@@ -1,2 +1,9 @@
 # lock
-encrypt/decrypt tool
+encrypt/decrypt tool used to practice security-centric programming
+
+-base64
+-caesar
+
+
+todo
+-xor

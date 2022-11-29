@@ -51,5 +51,6 @@ def main():
     string_to_encode = input("Please enter the string you wish to encode:\n")
     encode_flag = input("Please enter the cipher you wish to use:\n")
     
-main()
-encode_caesar("test")
+#main()
+string_test = input("Please enter the string you wish to encode:\n")
+encode_rot13(string_test)

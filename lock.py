@@ -1,5 +1,6 @@
 #Encode and decode tool for various cryptographic algorithms
 import base64
+import codecs
 
 string_to_encode = b""
 encode_flag = b""
@@ -32,15 +33,19 @@ def decode_caesar():
 
 #rot13 cipher encode 
 def encode_rot13(string_to_encode):
-    def lookup(x):
-        order, char = ord(x), x.lower() 
-        if 'a' <= char <= 'm':
-            return chr(order + 13)
-        if 'n' <= char <= 'z':
-            return chr(order - 13)
-        return x
-    print("Here is your encoded string:\n ")
-    return ''.join(map(lookup, string_to_encode))
+    #def lookup(x):
+    #    order, char = ord(x), x.lower()
+    #    if 'a' <= char <= 'm':
+    #        return chr(x + 13)
+    #    if 'n' <= char <= 'z':
+    #        return chr(x - 13)
+    #    return x
+    #print("Here is your encoded string:\n ")
+    #return ''.join(map(lookup, string_to_encode))
+    x = codecs.encode(string_test, 'rot_13')
+    print("Encoded: ")
+    print(x)
+
 
 #rot13 cipher decode
 def decode_rot13():
@@ -53,4 +58,6 @@ def main():
     
 #main()
 string_test = input("Please enter the string you wish to encode:\n")
+#string_test = bytes(string_test, 'ascii')
+print(string_test)
 encode_rot13(string_test)

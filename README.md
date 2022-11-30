@@ -1,9 +1,6 @@
 # lock
 encrypt/decrypt tool used to practice security-centric programming
 
--base64
--caesar
+Incredibly incomplete and in progress
 
-
-todo
--xor
+Most likely re-writing in Go to practice

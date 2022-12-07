@@ -30,7 +30,6 @@ def decode_caesar():
     print("Here is your decoded string:\n ")
     print()
 
-
 #rot13 cipher encode 
 def encode_rot13(string_to_encode):
     x = codecs.encode(string_test, 'rot_13')

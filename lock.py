@@ -33,17 +33,8 @@ def decode_caesar():
 
 #rot13 cipher encode 
 def encode_rot13(string_to_encode):
-    #def lookup(x):
-    #    order, char = ord(x), x.lower()
-    #    if 'a' <= char <= 'm':
-    #        return chr(x + 13)
-    #    if 'n' <= char <= 'z':
-    #        return chr(x - 13)
-    #    return x
-    #print("Here is your encoded string:\n ")
-    #return ''.join(map(lookup, string_to_encode))
     x = codecs.encode(string_test, 'rot_13')
-    print("Encoded: ")
+    print("ROT13 string Encoded: ")
     print(x)
 
 

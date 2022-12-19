@@ -11,8 +11,8 @@ encode_flag = b""
 
 
 #Base64 encode 
-def encode_base64(string_to_encode, encode_flag):
-    base64_msg = base64.b64encode(string_to_encode)
+def encode_base64(string_to_encode):
+    base64_msg = base64.b64encode(string_to_encode.encode('utf-8'))
     print("Here is your encoded string:\n ")
     print(base64_msg)
 
@@ -36,8 +36,8 @@ def decode_caesar():
     print()
 
 #rot13 cipher encode 
-def encode_rot13(string_test):
-    x = codecs.encode(string_test, 'rot_13')
+def encode_rot13(string_to_encode):
+    x = codecs.encode(string_to_encode, 'rot_13')
     print("ROT13 string Encoded: ")
     print(x)
 
@@ -58,4 +58,4 @@ print(string_test)
 encode_rot13(string_test)
 print("BREAK")
 print("BREAK")
-
+encode_base64(string_test)

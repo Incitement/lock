@@ -8,3 +8,4 @@ Most likely re-writing in Go to practice
 works:
 base64 encode
 rot13 encode
+caesar encode

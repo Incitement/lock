@@ -5,8 +5,8 @@ import argparse
 import sys
 
 
-string_to_encode = b""
-encode_flag = b""
+#string_to_encode = b""
+#encode_flag = b""
 
 
 

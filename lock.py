@@ -3,6 +3,7 @@ import base64
 import codecs
 import argparse
 import sys
+import hashlib
 
 
 #string_to_encode = b""
@@ -53,6 +54,19 @@ def decode_rot13():
     print("Here is your decoded string:\n ")
     print() 
 
+
+#sha-256 encode
+def encode_sha256(string_to_encode):
+    x = string_to_encode.encode()
+    hashed = hashlib.sha256()
+    hashed.update(x)
+    hex_hash = hashed.hexdigest()
+
+    print("Here is your encoded string:\n ")
+    print(hex_hash)
+
+
+
 def main():
     string_to_encode = input("Please enter the string you wish to encode:\n")
     encode_flag = input("Please enter the cipher you wish to use:\n")
@@ -61,8 +75,7 @@ def main():
 string_test = input("Please enter the string you wish to encode:\n")
 #string_test = bytes(string_test, 'ascii')
 print(string_test)
-encode_rot13(string_test)
-print("BREAK")
-print("BREAK")
-encode_base64(string_test)
-encode_caesar(string_test)
+
+encode_sha256(string_test)
+
+

@@ -1,11 +1,9 @@
-# lock
-encrypt/decrypt tool used to practice security-centric programming
+# lock.py
 
-Incredibly incomplete and in progress
+A repository for messing around with encryption standards and other various locking mechanisms. Started as just various incomplete snippets of Python, and may or may not stay that way. Regardless I plan on applying what I learn with this repo to other security projects in the future, particularly for encrypting data. 
 
-Most likely re-writing in Go to practice
-
-works:
-base64 encode
-rot13 encode
-caesar encode
+## Working Features
+- Base64 encode
+- ROT13 encode
+- Caesar encode
+- SHA256 encode
